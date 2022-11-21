@@ -1,0 +1,19 @@
+﻿  app.c
+D:\Resumbit Pro\Resumbit Pro\app.c(19,25): warning C4047: 'function': 'ST_cardData_t *' differs in levels of indirection from 'ST_cardData_t **'
+D:\Resumbit Pro\Resumbit Pro\app.c(19,22): warning C4024: 'isValidAccount': different types for formal and actual parameter 1
+D:\Resumbit Pro\Resumbit Pro\app.c(19,29): warning C4047: 'function': 'ST_accountsDB_t *' differs in levels of indirection from 'ST_accountsDB_t **'
+D:\Resumbit Pro\Resumbit Pro\app.c(19,27): warning C4024: 'isValidAccount': different types for formal and actual parameter 2
+  main.c
+  server.c
+D:\Resumbit Pro\Resumbit Pro\server.c(7,17): warning C4047: '=': 'ST_cardData_t *' differs in levels of indirection from 'ST_cardData_t **'
+D:\Resumbit Pro\Resumbit Pro\server.c(12,30): warning C4047: 'function': 'ST_cardData_t *' differs in levels of indirection from 'ST_cardData_t **'
+D:\Resumbit Pro\Resumbit Pro\server.c(12,21): warning C4024: 'getCardPAN': different types for formal and actual parameter 1
+D:\Resumbit Pro\Resumbit Pro\server.c(25,12): warning C4477: 'printf' : format string '%f' requires an argument of type 'double', but variadic argument 1 has type 'uint32_t'
+  Generating Code...
+main.obj : error LNK2005: accountsDB already defined in app.obj
+main.obj : error LNK2005: transactions already defined in app.obj
+main.obj : error LNK2005: current_Balance already defined in app.obj
+server.obj : error LNK2005: accountsDB already defined in app.obj
+server.obj : error LNK2005: transactions already defined in app.obj
+server.obj : error LNK2005: current_Balance already defined in app.obj
+D:\Resumbit Pro\x64\Debug\Resumbit Pro.exe : fatal error LNK1169: one or more multiply defined symbols found
